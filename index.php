@@ -9,43 +9,37 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top">
+    <nav class="navbar navbar-expand-md bg-body fixed-top">
       <div class="container-fluid col-10">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand" href="#">Info Riscon</a>
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse justify-content-between" id="navbarToggler">
+          <a class="navbar-brand d-flex" href="#"><img src="img/logo-info-riscon.png" height="40" /></a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Beranda</a>
             </li>
             <li class="nav-item">
               <!-- Dropdown -->
               <div class="dropdown">
-                <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Produk</button>
+                <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Bisnis</button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Makanan</a></li>
-                  <li><a class="dropdown-item" href="#">Minuman</a></li>
-                  <li><a class="dropdown-item" href="#">Cemilan</a></li>
-                </ul>
-              </div>
-              <!-- End of Dropdown -->
-            </li>
-            <li class="nav-item">
-              <!-- Dropdown -->
-              <div class="dropdown">
-                <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Jasa</button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Sewa Sepeda Listrik</a></li>
-                  <li><a class="dropdown-item" href="#">Tukang Bangunan</a></li>
-                  <li><a class="dropdown-item" href="#">Las</a></li>
+                  <li><a class="dropdown-item" href="#">Produk</a></li>
+                  <li><a class="dropdown-item" href="#">Jasa</a></li>
+                  <li><a class="dropdown-item" href="#">Koperasi</a></li>
                 </ul>
               </div>
               <!-- End of Dropdown -->
             </li>
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#">Informasi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Program</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Kontak</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -58,23 +52,54 @@
     <!-- End of Navbar -->
 
     <!-- Hero -->
-    <section class="container mt-5" id="hero">
-      <div class="p-2 bg-body-tertiary bg-main">
-        <div class="container text-center py-3">
-          <h1 class="text-body-emphasis">Full-width jumbotron</h1>
-          <p class="col-lg-8 mx-auto lead">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, molestiae. Mollitia quisquam eveniet minus, doloribus saepe impedit autem laudantium. Inventore temporibus doloremque iure itaque officiis blanditiis, placeat
-            magnam tenetur eveniet sunt odit corrupti sapiente, sequi expedita. Expedita reiciendis voluptates eveniet in nisi exercitationem libero, dolor nulla porro incidunt laudantium accusamus.
-          </p>
+    <section class="container" id="hero">
+      <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://source.unsplash.com/600x350?food" class="d-block w-100" alt="Food" />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Food</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reprehenderit perferendis iure sint qui doloremque?</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://source.unsplash.com/600x350?beverage" class="d-block w-100" alt="Beverage" />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Beverage</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, praesentium aspernatur.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://source.unsplash.com/600x350?snack" class="d-block w-100" alt="Snack" />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Snack</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dicta exercitationem totam hic libero?</p>
+            </div>
+          </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </section>
     <!-- End of hero -->
 
     <!-- Content -->
     <!-- PRODUK -->
-    <div class="container justify-content-between" id="content">
-      <h2 class="text-center m-2">Produk</h2>
+    <div class="container justify-content-between mt-3" id="content">
+      <div class="row text-center">
+        <div class="col">
+          <h2>Produk</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus tempora ratione culpa blanditiis vero quos, eum similique cum quisquam, delectus modi rerum vel deleniti molestiae libero dolorum assumenda, perspiciatis dicta.
+          </p>
+        </div>
+      </div>
       <div class="row d-flex row-cols-1 row-cols-md-3 g-2 mt-2 mx-auto">
         <div class="col">
           <div class="card border-0 justify-content-center">
@@ -102,6 +127,12 @@
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, quasi?</p>
+          <a class="btn btn-primary" href="#" role="button">Cek</a>
         </div>
       </div>
     </div>
@@ -185,35 +216,26 @@
     <div class="container">
       <footer class="py-5">
         <div class="row">
-          <div class="col-6 col-md-2 mb-3">
+          <div class="col-6 col-md-3 mb-3">
             <h5>Menu Utama</h5>
             <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Kategori</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Beranda</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Bisnis</a></li>
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Informasi</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Tentang Kami</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Kontak</a></li>
             </ul>
           </div>
 
-          <div class="col-6 col-md-2 mb-3">
-            <h5>Produk</h5>
+          <div class="col-6 col-md-3 mb-3">
+            <h5>Bisnis</h5>
             <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Makanan</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Minuman</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cemilan</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Produk</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Jasa</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Koperasi</a></li>
             </ul>
           </div>
 
-          <div class="col-6 col-md-2 mb-3">
-            <h5>Jasa</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Rental Mobil</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Tour & Travel</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Rental Sepeda Listrik</a></li>
-            </ul>
-          </div>
-
-          <div class="col-md-5 offset-md-1 mb-3">
+          <div class="col-md-4 offset-md-1 mb-3">
             <form>
               <h5>Berlangganan dengan Jajanan Riscon</h5>
               <p>Anda akan mendapatkan segala informasi terbaru dari kami.</p>

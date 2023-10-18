@@ -3,4 +3,16 @@ body{
     padding: 0;
 }
 
+nav {
+    border-bottom: 1px solid lightgray;
+}
+section#hero{
+    margin-top: 55px;
+}
 
+.carousel-item {
+    box-sizing: content-box;
+    max-height: 350px;
+    color: darkgray;
+    text-shadow: 1px 1px darkgray;
+}
